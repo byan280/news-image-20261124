@@ -1,7 +1,8 @@
-# News image entry: copy image.png to /output, byte-for-byte.
-# The image file lives next to this script in the repository.
-# Running the script writes /output/image.png and prints its name.
-# Copy the news image to /output, byte-for-byte, every run.
+# Copy the daily news image into the output folder.
+# The picture sits beside this script in the repo.
+# Every run writes a byte-identical copy to /output/image.png.
+# The script then prints the output file name, nothing else.
+# The source path is resolved from this file's own location.
 import os
 
 src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "image.png")
